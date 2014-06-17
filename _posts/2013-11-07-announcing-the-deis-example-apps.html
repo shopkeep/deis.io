@@ -12,25 +12,24 @@ author: bengrunfeld
 <p>Deis is a polyglot application platform (PaaS), meaning that you can deploy practically any language on it. While we currently offer support for Ruby, Python, Node.js, Java, Clojure, Scala, Play, PHP, Perl, Dart and Go, you can really run any language on Deis by using Heroku buildpacks or Chef recipes.</p>
 <p>From a developer's standpoint, this presents practically endless opportunities as you are able to deploy apps across public clouds, private clouds and bare metal using the language of your choice.</p>
 <p>That said, it can sometimes be challenging for even an advanced programmer to quickly pick up all the requirements of a new platform so that you can get your application up and running in a short amount of time.</p>
-<p>To address this problem, we created basic "Hello World" <a href="https://github.com/search?q=%40opdemand+example-" target="_blank">example apps</a> which walk through setting up a local development environment, creating a Deis application, deploying with <code>git push</code>, scaling containers, configuring the app using environment variables as well as basic troubleshooting.</p>
+<p>To address this problem, we created basic "Hello World" <a href="https://github.com/search?q=%40deis+example-" target="_blank">example apps</a> which walk through setting up a local development environment, creating a Deis application, deploying with <code>git push</code>, scaling containers, configuring the app using environment variables as well as basic troubleshooting.</p>
 <p>As of today, this documentation is in place for all of our supported languages!</p>
 <!--more-->
 <p>Due to some issues with Heroku buildpack compatibility that are currently being worked on in conjunction with our friends on the <a href="https://github.com/progrium/buildstep">Buildstep</a> project, some of the example apps aren't working perfectly yet:</p>
 <ul>
-<li><a href="https://github.com/opdemand/example-dart/issues/1">Dart – git push deis master fails for Dart</a></li>
-<li><a href="https://github.com/opdemand/example-perl/issues/1">Perl – deis open leads to 502 Bad Gateway Error</a></li>
+<li><a href="https://github.com/deis/example-dart/issues/1">Dart – git push deis master fails for Dart</a></li>
 </ul>
 <p>Fortunately, most applications work great. Below you will find working example apps and their documentation:</p>
 <ul>
-<li><a href="https://github.com/opdemand/example-clojure-ring">Clojure</a></li>
-<li><a href="https://github.com/opdemand/example-ruby-sinatra">Ruby</a></li>
-<li><a href="https://github.com/opdemand/example-python-flask">Python</a></li>
-<li><a href="https://github.com/opdemand/example-java-jetty">Java</a></li>
-<li><a href="https://github.com/opdemand/example-nodejs-express">Node.js</a></li>
-<li><a href="https://github.com/opdemand/example-go">Go</a></li>
-<li><a href="https://github.com/opdemand/example-play">Play</a></li>
-<li><a href="https://github.com/opdemand/example-scala">Scala</a></li>
-<li><a href="https://github.com/opdemand/example-php">PHP</a></li>
+<li><a href="https://github.com/deis/example-clojure-ring">Clojure</a></li>
+<li><a href="https://github.com/deis/example-ruby-sinatra">Ruby</a></li>
+<li><a href="https://github.com/deis/example-python-flask">Python</a></li>
+<li><a href="https://github.com/deis/example-java-jetty">Java</a></li>
+<li><a href="https://github.com/deis/example-nodejs-express">Node.js</a></li>
+<li><a href="https://github.com/deis/example-go">Go</a></li>
+<li><a href="https://github.com/deis/example-play">Play</a></li>
+<li><a href="https://github.com/deis/example-scala">Scala</a></li>
+<li><a href="https://github.com/deis/example-php">PHP</a></li>
 </ul>
 <p>If you're interested in contributing to Deis but don't know much about Chef, Docker or Deis internals, the example apps are a great way to contribute. We will gladly accept pull requests that help improve the example apps and their documentation.</p>
 <p>We've also had people ask for a Deis sandbox environment that would allow you to test your application on a public hosted version of Deis (with some limitations of course). Interested in seeing a sandbox environment? Let us know on Twitter <a href="https://twitter.com/opendeis">@opendeis</a>.</p>
