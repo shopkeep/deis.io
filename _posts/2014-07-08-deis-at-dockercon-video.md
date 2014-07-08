@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deis at DockerCon
+title: Deis at DockerCon (Video)
 author: bacongobbler
 meta:
   - name: description
