@@ -10,11 +10,11 @@ meta:
 ---
 
 [Gabriel Monroy][gabrtv] – creator of the Deis project and CTO at [OpDemand][opdemand] –
-delivers “Deis, Evolution of a Docker PaaS” at [DockerCon][dockercon] 2014. You can find
-the presentation slides [here][slides].
+delivers “Deis, Evolution of a Docker PaaS” at [DockerCon][dockercon] 2014.
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/GnIsmNN1sVA" frameborder="0" allowfullscreen></iframe>
 
+You can find the presentation slides [here][slides].
 
 [dockercon]: http://www.dockercon.com/
 [gabrtv]: https://twitter.com/gabrtv
