@@ -52,7 +52,7 @@ $ deis keys:add                                   # add your SSH key
                 <div class="span6">
 {% highlight bash %}
 $ deis clusters:create dev local.deisapp.com \    # create a cluster
-    --hosts=local.deisapp.com \
+    --hosts=172.17.8.100 \
     --auth=~/.vagrant.d/insecure_private_key
 $ deis create
 Creating application... done, created lambda-hawthorn
