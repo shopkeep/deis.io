@@ -75,8 +75,8 @@ For details, please see [CHANGELOG.md](https://github.com/deis/deis/blob/master/
 We want to thank the following Deis community members for creating GitHub issues,
 providing support to others, and working on various Deis branches:
 
-* @aledbf - GCE scripts/docs!, major testing & bug reports
-* @andyshinn - config download & config:set suggestions, lots of testing & help
+* @aledbf - custom builder/runner, major testing & bug reports
+* @andyshinn -  GCE scripts/docs!, config suggestions, lots of testing & help
 * @bcwaldon - help with several CoreOS issues
 * @btrepp - `make pull` behind corp proxy report
 * @clayzermk1 - testing & default nginx discussion, t1.micro, cloudformation issues
