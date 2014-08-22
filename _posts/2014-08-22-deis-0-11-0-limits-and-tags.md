@@ -112,6 +112,8 @@ providing support to others, and working on various Deis branches:
 * @xmwang76 - phantom app report
 * @yieme - setup details doc suggestion
 
+The Deis community continues to grow, and Deis wouldn't be here without you! If we slighted your contribution to this release, please let us know so we can update.
+
 
 ## Known Issues
 
