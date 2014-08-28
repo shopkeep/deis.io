@@ -9,6 +9,10 @@ meta:
     content: deis, cluster, ec2, coreos, fleet, ssl
 ---
 
+Please note that this blog post is targeted towards Deis v0.11.0. Please read the
+[installation docs](http://docs.deis.io/en/latest/installing_deis/) on setting up a
+cluster for the version you wish to run.
+
 I recently deployed https://deis.fishworks.io on EC2, so I thought a blog post on how I
 configured the cluster may be useful to some users. The process here is mostly to do with
 EC2, but it can apply to any public/private cloud provider. Alternatively, you can roll
