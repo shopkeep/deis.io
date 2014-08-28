@@ -78,7 +78,7 @@ Now that we have them all set, let's provision a CoreOS cluster:
     Please wait for all instances to come up as "running" before continuing.
 
 Once we've finished provisioning the cluster, we can now add the DNS entries. For Deis, it
-requires that you use a wildcard sumdomain for applications. When we provisioned the
+requires that you use a wildcard subdomain for applications. When we provisioned the
 cluster, we were also provided with an Elastic Load Balancer which points to the three
 nodes in the cluster. Start by creating a CNAME record for the wildcard DNS:
 
