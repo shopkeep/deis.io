@@ -2,7 +2,7 @@
 
 # try to detect Linux distribution family
 OS=`hostnamectl status 2> /dev/null | sed -n -e 's/^.*Operating\ System: //p' | cut -d " " -f1`
-if [ "$OS" == "CoreOS" ]; then
+if [ "$OS" = "CoreOS" ]; then
     mkdir -p /opt/bin
     INSTALLER_OPTS="--target /opt/bin"
 fi
