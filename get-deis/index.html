@@ -25,14 +25,15 @@ meta:
             <div class="row spacer">
                 <div class="span6">
 {% highlight bash %}
-$ git clone https://github.com/deis/deis.git      # clone the repo
-$ cd deis && vagrant up                           # provision a cluster
-$ ssh-add ~/.vagrant.d/insecure_private_key       # allow SSH access
-$ export FLEETCTL_TUNNEL=172.17.8.100             # point fleetctl at it
-$ make run                                        # bootstrap the cluster
-$ sudo pip install deis                           # install the CLI
-$ deis register http://deis.local.deisapp.com     # register a user
-$ deis keys:add                                   # add your SSH key
+$ curl -sSL http://deis.io/deisctl/install.sh | sudo sh
+$ git clone https://github.com/deis/deis.git
+$ cd deis && vagrant up
+$ ssh-add ~/.vagrant.d/insecure_private_key
+$ export DEISCTL_TUNNEL=172.17.8.100
+$ deisctl install platform && deisctl start platform
+$ pip install ./client/
+$ deis register http://deis.local.deisapp.com
+$ deis keys:add
 {% endhighlight %}
                 </div>
                 <div class="span3">
@@ -43,6 +44,7 @@ $ deis keys:add                                   # add your SSH key
                     <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#amazon-ec2">EC2</a> and
                     <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#bare-metal">bare metal</a>.</p>
                     <p>Use the Deis <a href="http://docs.deis.io/en/latest/reference/usage/" target="_blank">command-line client</a> to interact with the controller.</p>
+                    <p>Use the <a href="https://github.com/deis/deisctl">Deisctl</a> client to manage a Deis cluster.</p>
                 </div>
             </div>
 
