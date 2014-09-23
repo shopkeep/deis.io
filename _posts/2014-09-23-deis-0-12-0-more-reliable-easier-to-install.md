@@ -19,7 +19,7 @@ Under the hood, Deis now uses the [Fleet](https://github.com/coreos/fleet) HTTP 
 
 <!--more-->
 
-If you are coming from an earlier version of Deis, read the ["Upgrading Deis"](http://docs.deis.io/en/latest/operations/upgrading-deis/) documentation for details.
+If you are coming from an earlier version of Deis, read the ["Upgrading Deis"](http://docs.deis.io/en/latest/installing_deis/upgrading-deis/) documentation for details.
 
 ## What is Deis?
 
