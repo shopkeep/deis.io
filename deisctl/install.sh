@@ -12,7 +12,7 @@ set -e
 
 # determine from whence to download the installer
 PLATFORM=`uname | tr '[:upper:]' '[:lower:]'`
-DEIS_INSTALLER=${DEIS_INSTALLER:-deisctl-0.12.0-dev-$PLATFORM-amd64.run}
+DEIS_INSTALLER=${DEIS_INSTALLER:-deisctl-0.12.0-$PLATFORM-amd64.run}
 DEIS_BASE_URL=${DEIS_BASE_URL:-https://s3-us-west-2.amazonaws.com/opdemand}
 INSTALLER_URL=$DEIS_BASE_URL/$DEIS_INSTALLER
 
