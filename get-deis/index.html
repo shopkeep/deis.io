@@ -21,7 +21,7 @@ meta:
     </div>
     <div class="row gd-code">
         <div class="span9">
-            <h2 style="margin-top:0;">01. Provision a Deis Controller</h2>
+            <h2 style="margin-top:0;">01. Provision Deis</h2>
             <div class="row spacer">
                 <div class="span6">
 {% highlight bash %}
@@ -37,11 +37,14 @@ $ deis keys:add
 {% endhighlight %}
                 </div>
                 <div class="span3">
-                    <p>Provision a private <a href="http://docs.deis.io/en/latest/reference/terms/controller/" target="_blank">Controller</a> &#8212; the brains of a Deis application platform. Here we use
+                    <p>Provision a Deis cluster. Here we use
                     <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#vagrant">Vagrant</a>,
                     but Deis also runs on
                     <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#rackspace">Rackspace</a>,
-                    <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#amazon-ec2">EC2</a> and
+                    <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#amazon-ec2">EC2</a>,
+                    <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#digitalocean">DigitalOcean</a>,
+                    <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#google-compute-engine">Google Compute Engine</a>,
+                     and
                     <a href="http://docs.deis.io/en/latest/installing_deis/provision-controller/#bare-metal">bare metal</a>.</p>
                     <p>Use the Deis <a href="http://docs.deis.io/en/latest/reference/usage/" target="_blank">command-line client</a> to interact with the controller.</p>
                     <p>Use the <a href="https://github.com/deis/deisctl">Deisctl</a> client to manage a Deis cluster.</p>
