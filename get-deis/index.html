@@ -27,12 +27,13 @@ meta:
 {% highlight bash %}
 $ curl -sSL http://deis.io/deisctl/install.sh | sudo sh
 $ git clone https://github.com/deis/deis.git
+$ export DEIS_NUM_INSTANCES=3
 $ cd deis && vagrant up
 $ ssh-add ~/.vagrant.d/insecure_private_key
 $ export DEISCTL_TUNNEL=172.17.8.100
 $ deisctl install platform && deisctl start platform
 $ pip install ./client/
-$ deis register http://deis.local.deisapp.com
+$ deis register http://deis.local3.deisapp.com
 $ deis keys:add
 {% endhighlight %}
                 </div>
@@ -55,8 +56,8 @@ $ deis keys:add
             <div class="row">
                 <div class="span6">
 {% highlight bash %}
-$ deis clusters:create dev local.deisapp.com \    # create a cluster
-    --hosts=172.17.8.100 \
+$ deis clusters:create dev local3.deisapp.com \    # create a cluster
+    --hosts=172.17.8.100,172.17.8.101,172.17.8.102 \
     --auth=~/.vagrant.d/insecure_private_key
 $ deis create
 Creating application... done, created lambda-hawthorn
@@ -89,14 +90,14 @@ Successfully built f49031ecd6c1
        Launching... done, v2
 
 -----> lambda-hawthorn deployed to Deis
-       http://lambda-hawthorn.local.deisapp.com
+       http://lambda-hawthorn.local3.deisapp.com
 
        To learn more, use `deis help` or visit http://deis.io
 
-To ssh://git@local.deisapp.com:2222/lambda-hawthorn.git
+To ssh://git@local3.deisapp.com:2222/lambda-hawthorn.git
  * [new branch]      master -> master
 
-$ curl -s http://lambda-hawthorn.local.deisapp.com
+$ curl -s http://lambda-hawthorn.local3.deisapp.com
 Powered by Deis!
 
 $ deis scale web=4
