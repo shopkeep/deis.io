@@ -1,4 +1,4 @@
-+---
+---
 layout: post
 title: "Deis v0.12 - More Reliable, Easier to Install"
 author: mboersma
@@ -16,6 +16,8 @@ $ deisctl install platform && deisctl start platform
 ```
 
 Under the hood, Deis now uses the [Fleet](https://github.com/coreos/fleet) HTTP API directly, which greatly increases the speed and reliability of container scheduling operations.
+
+<!--more-->
 
 If you are coming from an earlier version of Deis, read the ["Upgrading Deis"](http://docs.deis.io/en/latest/operations/upgrading-deis/) documentation for details.
 
