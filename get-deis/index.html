@@ -28,7 +28,8 @@ meta:
 $ curl -sSL http://deis.io/deisctl/install.sh | sudo sh
 $ git clone https://github.com/deis/deis.git
 $ export DEIS_NUM_INSTANCES=3
-$ cd deis && vagrant up
+$ cd deis
+$ make discovery-url && vagrant up
 $ ssh-add ~/.vagrant.d/insecure_private_key
 $ export DEISCTL_TUNNEL=172.17.8.100
 $ deisctl install platform && deisctl start platform
