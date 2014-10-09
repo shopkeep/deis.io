@@ -30,7 +30,7 @@ Deis is an open source PaaS that makes it easy to deploy and manage applications
 - The **publisher** service on each host removes the need for sidecar announce containers
 - `deis` command-line client can be installed with `curl -sSL http://deis.io/deis-cli/install.sh | sh`
 - A specific version of `deis` can now be installed with `curl -sSL http://deis.io/deis-cli/install.sh | sh -s 0.13.0`
-- A specific version of `deisctl` can now be installed with 'curl -sSL http://deis.io/deisctl/install.sh | sh -s 0.13.0`
+- A specific version of `deisctl` can now be installed with `curl -sSL http://deis.io/deisctl/install.sh | sh -s 0.13.0`
 
 ### Under the Hood
 
