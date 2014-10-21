@@ -28,7 +28,7 @@ sh /tmp/$DEIS_INSTALLER $INSTALLER_OPTS
 
 # install the unit files to /var/lib/deis/units on CoreOS by default
 if [ "$INSTALL_GLOBAL_UNITS" = "true" ]; then
-    /opt/bin/deisctl refresh-units --path=/var/lib/deis/units
+    /opt/bin/deisctl refresh-units --path=/var/lib/deis/units --tag=v$VERSION
 fi
 
 # clean up after ourselves
