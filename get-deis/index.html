@@ -32,8 +32,9 @@ $ cd deis
 $ make discovery-url && vagrant up
 $ ssh-add ~/.vagrant.d/insecure_private_key
 $ export DEISCTL_TUNNEL=172.17.8.100
-$ deisctl config platform set domain=local3.deisapp.com
-$ deisctl config platform set sshPrivateKey=~/.vagrant.d/insecure_private_key
+$ deisctl config platform set \
+    domain=local3.deisapp.com \
+    sshPrivateKey=~/.vagrant.d/insecure_private_key
 $ deisctl install platform && deisctl start platform
 $ pip install ./client/
 $ deis register http://deis.local3.deisapp.com
