@@ -25,7 +25,8 @@ meta:
             <div class="row spacer">
                 <div class="span6">
 {% highlight bash %}
-$ curl -sSL http://deis.io/deisctl/install.sh | sudo sh
+$ curl -sSL http://deis.io/deisctl/install.sh | sh
+$ sudo mv deisctl /usr/local/bin
 $ git clone https://github.com/deis/deis.git
 $ export DEIS_NUM_INSTANCES=3
 $ cd deis
