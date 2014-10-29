@@ -23,7 +23,7 @@ Deis is an open source PaaS that makes it easy to deploy and manage applications
 
 ### New Features
 
-- `deisctl` now supports [in-place upgrades](http://docs.deis.io/en/latest/installing_deis/upgrading-deis/) of the platform!
+- `deisctl` now supports [in-place upgrades](http://docs.deis.io/en/latest/managing_deis/upgrading-deis/) of the platform!
 - Most `deisctl` commands are now asynchronous resulting in better UX for operators
 - `deis auth:whoami` command added to list currently logged in user
 - The **controller** now uses Token authentication for easy REST API integration
