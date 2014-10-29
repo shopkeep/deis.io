@@ -13,7 +13,7 @@ The Deis project brings you our [v0.14.0 release](https://github.com/deis/deis/r
 
 <!--more-->
 
-If you are coming from an earlier version of Deis, read the ["Upgrading Deis"](http://docs.deis.io/en/latest/installing_deis/upgrading-deis/) documentation for details.
+If you are coming from an earlier version of Deis, read the ["Upgrading Deis"](http://docs.deis.io/en/latest/managing_deis/upgrading-deis/) documentation for details.
 
 ## What is Deis?
 
@@ -23,7 +23,7 @@ Deis is an open source PaaS that makes it easy to deploy and manage applications
 
 ### New Features
 
-- `deisctl` now supports [in-place upgrades](http://docs.deis.io/en/latest/installing_deis/upgrading-deis/) of the platform!
+- `deisctl` now supports [in-place upgrades](http://docs.deis.io/en/latest/managing_deis/upgrading-deis/) of the platform!
 - Most `deisctl` commands are now asynchronous resulting in better UX for operators
 - `deis auth:whoami` command added to list currently logged in user
 - The **controller** now uses Token authentication for easy REST API integration
