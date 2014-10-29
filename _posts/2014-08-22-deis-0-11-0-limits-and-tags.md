@@ -13,7 +13,7 @@ The Deis project is happy to bring you the [v0.11.0 release](https://github.com/
 
 <!--more-->
 
-If you are coming from an earlier version of Deis, read the ["Upgrading Deis"](http://docs.deis.io/en/latest/operations/upgrading-deis/) documentation for details.
+If you are coming from an earlier version of Deis, read the ["Upgrading Deis"](http://docs.deis.io/en/latest/managing_deis/upgrading-deis/) documentation for details.
 
 ## What is Deis?
 
