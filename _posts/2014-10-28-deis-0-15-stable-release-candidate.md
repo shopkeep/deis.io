@@ -9,7 +9,7 @@ meta:
     content: deis, release, 0.15, stable, release candidate
 ---
 
-The Deis project is thrilled to announce [v0.15.0](https://github.com/deis/deis/releases/tag/v0.15.0), our first release candidate for stable. With [CephFS](http://ceph.com/docs/master/cephfs/) and our [v1 REST API](http://docs.deis.io/en/latest/reference/server/rest-api/) in place, we are now in a feature freeze.  We will only enhance documentation and fix bugs until our first **stable release** in November.
+The Deis project is thrilled to announce [v0.15.0](https://github.com/deis/deis/releases/tag/v0.15.0), our first release candidate for stable. With [CephFS](http://ceph.com/docs/master/cephfs/) and our [v1 REST API](http://docs.deis.io/en/latest/reference/api-v1) in place, we are now in a feature freeze.  We will only enhance documentation and fix bugs until our first **stable release** in November.
 
 <!--more-->
 
