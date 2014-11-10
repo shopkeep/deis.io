@@ -13,7 +13,8 @@ meta:
         <div class="span6">
             <h1>Deploy Your Own Private PaaS</h1>
             <p>
-            Before you get started, read about Deis core <a href="http://docs.deis.io/en/latest/understanding_deis/concepts/"target="_blank">Concepts</a>. Review our <a href="http://docs.deis.io/" target="_blank">documentation</a> for more detailed instructions, and see the README for <a href="https://github.com/deis/deis#install-prerequisites" target="_blank">installation prerequisites</a>.
+            Before you get started, make sure you understand Deis <a href="http://docs.deis.io/en/latest/understanding_deis/concepts/"target="_blank">Concepts</a>
+            as outlined in the <a href="http://docs.deis.io/en/latest/understanding_deis/">Understanding Deis</a> section of the documentation.
             </p>
 
             <h4>Want help? <a href="http://opdemand.com" class="get-deis-link" target="_blank">OpDemand</a> provides installation assistance and commercial support.</h4>
@@ -21,50 +22,67 @@ meta:
     </div>
     <div class="row gd-code">
         <div class="span9">
-            <h2 style="margin-top:0;">01. Provision Deis</h2>
+            <h2 style="margin-top:0;">01. Install CoreOS</h2>
             <div class="row spacer">
                 <div class="span6">
-{% highlight bash %}
-$ curl -sSL http://deis.io/deisctl/install.sh | sh
-$ sudo mv deisctl /usr/local/bin
-$ git clone https://github.com/deis/deis.git
-$ export DEIS_NUM_INSTANCES=3
-$ cd deis
-$ make discovery-url && vagrant up
-$ ssh-add ~/.vagrant.d/insecure_private_key
-$ export DEISCTL_TUNNEL=172.17.8.100
-$ deisctl config platform set \
-    domain=local3.deisapp.com \
-    sshPrivateKey=~/.vagrant.d/insecure_private_key
-$ deisctl install platform && deisctl start platform
-$ pip install ./client/
-$ deis register http://deis.local3.deisapp.com
-$ deis keys:add
-{% endhighlight %}
-                </div>
-                <div class="span3">
-                    <p>Provision a Deis cluster. Here we use
-                    <a href="http://docs.deis.io/en/latest/installing_deis/vagrant">Vagrant</a>,
-                    but Deis also runs on
-                    <a href="http://docs.deis.io/en/latest/installing_deis/rackspace">Rackspace</a>,
-                    <a href="http://docs.deis.io/en/latest/installing_deis/aws">Amazon AWS</a>,
-                    <a href="http://docs.deis.io/en/latest/installing_deis/digitalocean">DigitalOcean</a>,
-                    <a href="http://docs.deis.io/en/latest/installing_deis/gce">Google Compute Engine</a>,
-                     and
-                    <a href="http://docs.deis.io/en/latest/installing_deis/baremetal">bare metal</a>.</p>
-                    <p>Use the Deis <a href="http://docs.deis.io/en/latest/reference/usage/" target="_blank">command-line client</a> to interact with the controller.</p>
-                    <p>Use the <a href="https://github.com/deis/deis/tree/master/deisctl">Deisctl</a> client to manage a Deis cluster.</p>
+                    <p>
+                    Install CoreOS on the hosting infrastructure of your choice.
+                    Deis includes documentation for installing CoreOS on
+                    <a href="http://docs.deis.io/en/latest/installing_deis/aws/">Amazon AWS</a>,
+                    <a href="http://docs.deis.io/en/latest/installing_deis/digitalocean/">DigitalOcean</a>,
+                    <a href="http://docs.deis.io/en/latest/installing_deis/gce/">Google Compute Engine</a>,
+                    <a href="http://docs.deis.io/en/latest/installing_deis/rackspace/">Rackspace</a>,
+                    <a href="http://docs.deis.io/en/latest/installing_deis/vagrant/">Vagrant</a>
+                    and
+                    <a href="http://docs.deis.io/en/latest/installing_deis/baremetal/">bare metal</a>.
+                    </p>
                 </div>
             </div>
 
-            <h2>02. Deploy &#038; Scale an Application</h2>
+            <h2>02. Provision Deis</h2>
             <div class="row">
                 <div class="span6">
+                    <p>
+                    Install the <a href="http://docs.deis.io/en/latest/installing_deis/install-deisctl/">deisctl utility</a> used to manage a Deis cluster.
+                    Then follow the instructions for <a href="http://docs.deis.io/en/latest/installing_deis/install-platform/">installing the Deis platform</a> on CoreOS.
+                    </p>
 {% highlight bash %}
-$ git clone https://github.com/deis/example-ruby-sinatra.git && cd example-ruby-sinatra
+$ deisctl install platform
+● ▴ ■
+■ ● ▴ Installing Deis...
+▴ ■ ●
+...
+Deis installed.
+Please run `deisctl start platform` to boot up Deis.
+
+$ deisctl start platform
+● ▴ ■
+■ ● ▴ Starting Deis...
+▴ ■ ●
+...
+Done.
+
+Please use `deis register` to setup an administrator account.
+{% endhighlight %}
+                </div>
+            </div>
+
+            <h2>03. Deploy your Applications</h2>
+            <div class="row">
+                <div class="span6">
+                    <p>
+                    Install the <a href="http://docs.deis.io/en/latest/using_deis/install-client/">deis client</a> used to interact with the Deis platform.
+                    Then follow the instructions to <a href="http://docs.deis.io/en/latest/using_deis/register-user/">register a user</a> and
+                    <a href="http://docs.deis.io/en/latest/using_deis/deploy-application/">deploy an application</a>.
+                    </p>
+{% highlight bash %}
+$ git clone https://github.com/deis/example-ruby-sinatra.git
+$ cd example-ruby-sinatra
+
 $ deis create
 Creating application... done, created lambda-hawthorn
 Git remote deis added
+
 $ git push deis master
 Counting objects: 92, done.
 Delta compression using up to 4 threads.
@@ -105,13 +123,9 @@ Powered by Deis!
 
 $ deis scale web=4
 Scaling containers... but first, coffee!
-done in 12s
+done in 9s
 {% endhighlight %}
-                </div>
-                <div class="span3">
-                    <p>Use the Deis client to create a new <a href="http://docs.deis.io/en/latest/understanding_deis/concepts/#applications" target="_blank">Application</a> on your cluster.</p>
-                    <p>Use `git push deis master` to deploy the app and scale an initial web container.</p>
-                    <p>Push code, change config, scale containers, view logs, run one-off commands &mdash; regardless of the cluster's underlying infrastructure.</p>
+                <p>Learn more about <a href="http://docs.deis.io/en/latest/using_deis/">Using Deis</a> in the documentation.</p>
                 </div>
             </div>
         </div>
