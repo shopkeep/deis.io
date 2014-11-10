@@ -9,6 +9,7 @@ a{font-family:helvetica;font-size:16px;font-weight:300;text-decoration:underline
 p{font-family:helvetica;font-size:16px;line-height:22px}
 img{border:0!important}
 body{zoom: 1;}
+#video{height: 460px;}
 .fork{float:right}
 .fork .forkImage{width:103px;height:58px;background:url(../img/fork.png)}
 .fork .forkImage:hover{background:url(../img/fork.png) 0 -58px}
