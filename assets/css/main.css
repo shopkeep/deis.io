@@ -162,6 +162,31 @@ textarea,input[type="text"],input[type="password"],input[type="datetime"],input[
 .mc_error_msg a{font-size:12px;color:#ff135a}
 .highlight-link{display:none}
 .rtd-docs br{display:none!important}@media(max-width:767px){.main-fork{left:1000px!important}}@media(max-width:480px){.main-fork{left:1000px!important}}
+.user-logos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.user-logo {
+    height: 90px;
+    width: 30%;
+    float: left;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.user-logo span.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.user-logo img {
+    vertical-align: middle;
+}
+.user-logo-footer {
+    clear: both;
+    margin-top: 50px;
+}
 /* Large desktop */
 @media (min-width: 1200px) {}
 
