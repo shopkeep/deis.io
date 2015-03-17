@@ -4,7 +4,7 @@ title: Deis Welcomes External Maintainers
 author: carmstrong
 meta:
   - name: description
-    content: Deis welcomes our first external maintainers: Johannes Würbach and Manuel de Brito Fontes.
+    content: Deis welcomes our first external maintainers.
   - name: keywords
     content: maintainers, johannes wuerbach, manuel de brito fontes
 ---
