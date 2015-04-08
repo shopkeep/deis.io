@@ -23,7 +23,7 @@ Deis is an open source PaaS that makes it easy to deploy and manage applications
 
 ### New Features
 
- - you can now [attach SSL certificates](http://docs.deis.io/en/latest/reference/domain-ssl/) to your applications!
+ - you can now [attach SSL certificates](http://docs.deis.io/en/latest/using_deis/app-ssl) to your applications!
  - the deis client now utilizes a [plugin architecture](https://github.com/deis/deis/pull/3177)
  - `deis config:push` has been added
  - `deis git:remote` has been added
