@@ -26,12 +26,12 @@ authors:
   mboersma:
     display_name: Matt Boersma
     gravatar: 599d83c3405e24cae65a1b1ad5401cb2
-    short_bio: Senior Software Engineer at OpDemand
+    short_bio: Deis core maintainer and Software Engineer at Engine Yard
     twitter: RealMattBoersma
   bacongobbler:
     display_name: Matt Fisher
     gravatar: 65e1d16c6d56dd57fa47b30dcb429eed
-    short_bio: CEO and Founder of Fishworks
+    short_bio: Deis core maintainer and Software Engineer at Engine Yard
     twitter: bacongobbler
   gabrtv:
     display_name: Gabriel Monroy
@@ -46,5 +46,5 @@ authors:
   carmstrong:
     display_name: Chris Armstrong
     gravatar: af504cb76d2ad9b45f6d0dbeab79a177
-    short_bio: Deis Team Lead at OpDemand
+    short_bio: Deis Team Lead at Engine Yard
     twitter: carmstrong_afk
