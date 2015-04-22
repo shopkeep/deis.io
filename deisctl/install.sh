@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install current version unless overridden by first command-line argument
-VERSION=${1:-1.5.1}
+VERSION=${1:-1.5.2}
 
 # try to detect Linux distribution family
 OS=`hostnamectl status 2> /dev/null | sed -n -e 's/^.*Operating\ System: //p' | cut -d " " -f1`

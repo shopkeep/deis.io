@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install current version unless overridden by first command-line argument
-VERSION=${1:-1.5.1}
+VERSION=${1:-1.5.2}
 
 # catch errors from here on out
 set -e
