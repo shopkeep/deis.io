@@ -25,7 +25,7 @@ exclude: ['README.md', 'Gemfile', 'Gemfile.lock', '.ruby-version']
 authors:
   mboersma:
     display_name: Matt Boersma
-    gravatar: 599d83c3405e24cae65a1b1ad5401cb2
+    gravatar: d778494c1f994d6046a4289461bad99c
     short_bio: Deis core maintainer and Software Engineer at Engine Yard
     twitter: RealMattBoersma
   bacongobbler:
@@ -48,3 +48,8 @@ authors:
     gravatar: af504cb76d2ad9b45f6d0dbeab79a177
     short_bio: Deis Team Lead at Engine Yard
     twitter: carmstrong_afk
+  smothiki:
+    display_name: Sivaram Mothiki
+    gravatar: fccb449e9feaad79ea2b385f8a3aa5c0
+    short_bio: Deis maintainer and Software Engineer at Engine Yard
+    twitter: smothiki
