@@ -46,10 +46,15 @@ authors:
   carmstrong:
     display_name: Chris Armstrong
     gravatar: af504cb76d2ad9b45f6d0dbeab79a177
-    short_bio: Deis Team Lead at Engine Yard
+    short_bio: Deis core maintainer and Deis Team Lead at Engine Yard
     twitter: carmstrong_afk
   smothiki:
     display_name: Sivaram Mothiki
     gravatar: fccb449e9feaad79ea2b385f8a3aa5c0
     short_bio: Deis maintainer and Software Engineer at Engine Yard
     twitter: smothiki
+  technosophos:
+    display_name: Matt Butcher
+    gravatar: c9eec3c9d165e463b05ea3d2b23d5ba3
+    short_bio: Deis core maintainer and Senior Software Engineer at Engine Yard
+    twitter: technosophos
