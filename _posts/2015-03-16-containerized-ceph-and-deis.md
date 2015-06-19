@@ -14,6 +14,6 @@ meta:
 Chris Armstrong, Deis team lead, recently spoke at [Ceph Day San Francisco](http://ceph.com/cephdays/ceph-day-san-francisco/) on how Deis uses [Ceph](http://ceph.com/), including pointers for running Ceph in containers.
 
 Deis is highly available thanks to Ceph, and it was a pleasure having the opportunity to give back to the Ceph community.
-You can find the slides [here](http://carmstrong.me/ceph-days-sf-deis-2015).
+You can find the slides [here](http://carmstrong.github.io/ceph-days-sf-deis-2015).
 
 <!--more-->
