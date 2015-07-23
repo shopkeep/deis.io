@@ -3,9 +3,14 @@
 # install current version unless overridden by first command-line argument
 VERSION=${1:-1.8.0}
 
+# allow for an optional install location
+if [ ! -z "$2" ] && [ -d "$2" ]; then
+    INSTALLER_OPTS="--target $2"
+fi
+
 # try to detect Linux distribution family
 OS=`hostnamectl status 2> /dev/null | sed -n -e 's/^.*Operating\ System: //p' | cut -d " " -f1`
-if [ "$OS" = "CoreOS" ]; then
+if [ -z "$INSTALLER_OPTS" ] && [ "$OS" = "CoreOS" ]; then
     mkdir -p /opt/bin
     INSTALLER_OPTS="--target /opt/bin"
     INSTALL_GLOBAL_UNITS=true
