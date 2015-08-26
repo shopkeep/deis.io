@@ -33,6 +33,11 @@ authors:
     gravatar: 65e1d16c6d56dd57fa47b30dcb429eed
     short_bio: Deis core maintainer and Software Engineer at Engine Yard
     twitter: bacongobbler
+  sgoings:
+    display_name: Seth Goings
+    gravatar: 2599e90d45538b0127c7df29918c33bd
+    short_bio: Deis DevTools Engineer and Software Engineer at Engine Yard
+    twitter: sethgoings
   gabrtv:
     display_name: Gabriel Monroy
     gravatar: 1f5dd69ca86e92ce3bc039c63f511d40
