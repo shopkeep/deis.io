@@ -42,7 +42,7 @@ Deis is an open source PaaS that makes it easy to deploy and manage applications
 - Graceful upgrades fixed several issues found in the wild
 - Documentation is more detailed about Azure provisioning and when `deisctl` is needed
 - Docs have an architecture diagram and detail about the [**deis-router** mesh](http://docs.deis.io/en/latest/understanding_deis/architecture/#router-mesh)
-- Docs give an example of backing **deis-registry** with OpenStack [Swift](http://docs.openstack.org/developer/swift/)
+- Docs give an example of backing **deis-registry** with OpenStack [Swift](http://docs.deis.io/en/latest/managing_deis/running-deis-without-ceph/#configure-registry)
 - `deis config:set` handles multi-line environment variables
 - The `deis` client suggests help if `deis create` fails on the git remote
 - `deis` correctly displays unexpected non-JSON error messages and malformed logs
@@ -55,7 +55,7 @@ Deis is an open source PaaS that makes it easy to deploy and manage applications
 
 ### Under the Hood
 
-- [CoreOS][https://coreos.com/] is updated to 766.4.0, the current stable channel version
+- [CoreOS](https://coreos.com/) is updated to 766.4.0, the current stable channel version
 - New clusters use CoreOS' default [`etcd2`](https://github.com/coreos/etcd) and [`flannel`](https://github.com/coreos/flannel) services
 - Azure provisioning uses new [ARM](https://azure.microsoft.com/en-us/documentation/articles/resource-manager-deployment-model/#) templates
 - DigitalOcean provisioning uses [terraform](https://terraform.io/)
