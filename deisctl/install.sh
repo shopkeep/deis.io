@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install current version unless overridden by first command-line argument
-VERSION=${1:-1.11.0}
+VERSION=${1:-1.11.1}
 
 # allow for an optional install location
 if [ ! -z "$2" ] && [ -d "$2" ]; then
