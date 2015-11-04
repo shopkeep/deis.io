@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install current version unless overridden by first command-line argument
-VERSION=${1:-1.11.2}
+VERSION=${1:-1.12.0}
 
 # allow for an optional install location
 if [ ! -z "$2" ] && [ -d "$2" ]; then
@@ -22,7 +22,7 @@ set -e
 # determine from whence to download the installer
 PLATFORM=`uname | tr '[:upper:]' '[:lower:]'`
 DEIS_INSTALLER=${DEIS_INSTALLER:-deisctl-$VERSION-$PLATFORM-amd64.run}
-DEIS_BASE_URL=${DEIS_BASE_URL:-https://s3-us-west-2.amazonaws.com/opdemand}
+DEIS_BASE_URL=${DEIS_BASE_URL:-https://s3-us-west-2.amazonaws.com/get-deis}
 INSTALLER_URL=$DEIS_BASE_URL/$DEIS_INSTALLER
 
 # download the installer archive to /tmp
